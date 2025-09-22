@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beach Life Balance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom font for the brand name */
+        .font-pacifico {
+            font-family: 'Pacifico', cursive;
+        }
+        /* Hero section background image */
+        .hero-bg {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?q=80&w=2070&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+        }
+        /* Fun gradient text for call-to-action */
+        .sunset-gradient-text {
+            background: -webkit-linear-gradient(45deg, #F97316, #EC4899, #8B5CF6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-cyan-50 font-inter text-gray-700">
+
+    <!-- Header Section -->
+    <header class="bg-white/80 backdrop-blur-md shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-3xl font-pacifico text-cyan-600">Beachlifebalance.com</a>
+            <div class="hidden md:flex space-x-8">
+                <a href="#about" class="text-gray-600 hover:text-cyan-500 transition duration-300">About Me</a>
+                <a href="#gallery" class="text-gray-600 hover:text-cyan-500 transition duration-300">My Sunsets</a>
+                <a href="#store" class="text-gray-600 hover:text-cyan-500 transition duration-300">Etsy Store</a>
+                <a href="#contact" class="text-gray-600 hover:text-cyan-500 transition duration-300">Contact</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-cyan-500 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 space-y-2">
+            <a href="#about" class="block text-gray-600 hover:text-cyan-500 transition duration-300">About Me</a>
+            <a href="#gallery" class="block text-gray-600 hover:text-cyan-500 transition duration-300">My Sunsets</a>
+            <a href="#store" class="block text-gray-600 hover:text-cyan-500 transition duration-300">Etsy Store</a>
+            <a href="#contact" class="block text-gray-600 hover:text-cyan-500 transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-bg min-h-screen flex items-center justify-center text-white text-center p-6">
+            <div class="bg-black/40 p-10 rounded-xl">
+                <h1 class="text-5xl md:text-7xl font-bold font-pacifico leading-tight">Find Your Balance</h1>
+                <p class="mt-4 text-lg md:text-xl max-w-2xl">Embracing the calm of the tides and the warmth of the sun. Welcome to my little slice of paradise.</p>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold text-cyan-700 mb-4">Welcome to Beach Life Balance</h2>
+                <p class="text-lg max-w-3xl mx-auto leading-relaxed">
+                    Just a beach lover who finds peace in salty air and sandy toes. This is my space to share the beauty I capture through my camera lens and the treasures I create. It's all about sharing the simple joys that a beach life brings. Thanks for stopping by!
+                </p>
+            </div>
+        </section>
+        
+        <!-- Fun Suggestions Sections -->
+        <section class="py-20 bg-amber-50/50">
+            <div class="container mx-auto px-6 grid md:grid-cols-2 gap-12 text-center">
+                <!-- Beach Tip of the Day -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-3xl font-bold text-orange-500 mb-3">Beach Tip of the Day ☀️</h3>
+                    <p class="text-lg">To get the best photos, shoot during the "golden hour" – the first hour after sunrise and the last hour before sunset. The light is soft, warm, and absolutely magical!</p>
+                </div>
+                <!-- Find of the Week -->
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <h3 class="text-3xl font-bold text-pink-500 mb-3">Find of the Week 🐚</h3>
+                    <p class="text-lg">This week I found a perfectly intact Sand Dollar! A true treasure from the sea, it's a reminder of the delicate beauty hidden just beneath the waves.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Personal Sunset Gallery -->
+        <section id="gallery" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-bold text-center text-cyan-700 mb-12">My Sunset Collection</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Image Placeholders - Replace with your photos -->
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/F97316/FFFFFF?text=Your+Sunset+Pic+1" alt="Beach Sunset 1" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/FB923C/FFFFFF?text=Your+Sunset+Pic+2" alt="Beach Sunset 2" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/F472B6/FFFFFF?text=Your+Sunset+Pic+3" alt="Beach Sunset 3" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/EC4899/FFFFFF?text=Your+Sunset+Pic+4" alt="Beach Sunset 4" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/A855F7/FFFFFF?text=Your+Sunset+Pic+5" alt="Beach Sunset 5" class="w-full h-64 object-cover">
+                    </div>
+                    <div class="bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                        <img src="https://placehold.co/600x400/8B5CF6/FFFFFF?text=Your+Sunset+Pic+6" alt="Beach Sunset 6" class="w-full h-64 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Etsy Store Link Section -->
+        <section id="store" class="py-20 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl font-bold mb-4 sunset-gradient-text">Visit My Online Store!</h2>
+                <p class="text-lg max-w-3xl mx-auto mb-8">
+                    I also create beach-inspired crafts and jewelry. Each piece is handmade with love and a little bit of sea magic. Take a look and bring a piece of the beach home with you.
+                </p>
+                <!-- Replace "#" with your actual Etsy store link -->
+                <a href="#" class="bg-cyan-500 text-white font-bold py-3 px-8 rounded-full text-lg hover:bg-cyan-600 transition-colors duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                    Shop on Etsy
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-2xl font-pacifico text-cyan-400 mb-4">Beachlifebalance.com</p>
+            <p>Get in touch or follow along on social media!</p>
+            <!-- Add your social media links here -->
+            <div class="flex justify-center space-x-6 mt-4">
+                <a href="https://instagram.com/beachlifebalance" target="_blank" class="hover:text-cyan-400 transition-colors duration-300">Instagram</a>
+                <a href="https://facebook.com/beachlifebalance" target="_blank" class="hover:text-cyan-400 transition-colors duration-300">Facebook</a>
+                <a href="https://tiktok.com/beach.life.balance" target="_blank" class="hover:text-cyan-400 transition-colors duration-300">TikTok</a>
+            </div>
+            <p class="mt-8 text-sm text-gray-400">&copy; 2024 Beach Life Balance. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
+
